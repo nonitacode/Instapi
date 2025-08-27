@@ -67,7 +67,7 @@ def get_instagram_user():
             "is_verified": user_data['is_verified'],
             "external_url": user_data['external_url'],
             "success": True,
-            "credit": "Made with ❤️ by @DIWANI_xD"
+            "credit": "Made with ❤️ by @NobiCreator"
         }
         
         return jsonify(result)
@@ -76,7 +76,7 @@ def get_instagram_user():
         return jsonify({
             "error": str(e),
             "username": username,
-            "credit": "Made with ❤️ by @DIWANI_xD"
+            "credit": "Made with ❤️ by @NobiCreator"
         }), 500
 
 @app.route('/')
@@ -86,7 +86,7 @@ def home():
         "endpoints": {
             "get_user_info": "/api/instagram/user?username=USERNAME"
         },
-        "credit": "Made with ❤️ by @DIWANI_xD"
+        "credit": "Made with ❤️ by @NobiCreator"
     })
 
 if __name__ == '__main__':
